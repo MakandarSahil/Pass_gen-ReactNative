@@ -49,7 +49,7 @@ const App = () => {
     const passwordResult = createPassword(characterList, passwordLength)
 
     setPassword(passwordResult)
-    setIsPassGenerated(true)
+    setIsPassGentated(true)
 
   }
 
@@ -65,7 +65,7 @@ const App = () => {
 
   const resetPassword = () => {
     setPassword('')
-    setIsPassGenerated(false)
+    setIsPassGentated(false)
     setupperCase(false)
     setlowerCase(false)
     setNumbers(false)
@@ -184,7 +184,7 @@ const App = () => {
             )}
           </Formik>
 
-          {isPassGenerated ? (
+          {isPassGenrated ? (
             <View style={[styles.card, styles.cardElevated]}>
               <Text style={styles.subTitle}>Result:</Text>
               <Text style={styles.description}>Long Press to copy</Text>
