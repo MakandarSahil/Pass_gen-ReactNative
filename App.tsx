@@ -59,8 +59,8 @@ const App = () => {
       const charIndex = Math.floor(Math.random() * characters.length)
       result += characters.charAt(charIndex)
     }
+    // console.log("Sahil")
     return result
-    console.log("Sahil")
   }
 
   const resetPassword = () => {
@@ -165,7 +165,7 @@ const App = () => {
                   <TouchableOpacity
                     disabled={!isValid}
                     style={styles.primaryBtn}
-                    onPress={handleSubmit}
+                    onPress={() => handleSubmit}
                   >
                     <Text style={styles.primaryBtnTxt}>Genrate Password</Text>
                   </TouchableOpacity>
